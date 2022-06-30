@@ -1,0 +1,29 @@
+<!-- Cascade Style Sheet 
+A sintaxe do CSS é composta por 1 seletor que referencia um elemento do HTML, como por exemplo, p, a, h1 etc... então, com chaves abertas, colocamos as propriedades, como por exemplo o color: red. O CSS desce em cascata, ou seja o ultimo seletor é mostrado na tela em caso de colocarmos mais de 1 -->
+
+<style>
+  #a {
+    color: red;
+    font-size: 36px;
+  }
+
+  p {
+    color: yellow;
+    font-size: 36px;
+    border: 2px solid green;
+  }
+
+</style>
+<p style="color: green">
+  <!--Estilos postos dentros da tag no documento html entra em prioridade pela especificidade.-->
+  Aprendendo CSS
+</p>
+<p id="a">
+  <!-- O seletor ID declarado com o # é mais específico do que o seletor de referencia, mas é menos especifico que o seletor direto na tag dentro do HTML-->
+  CSS é o Estilo
+</p>
+
+<p>
+  <!-- este recebe o seletor menos específico.-->
+  Brincando com os seletores
+</p>

@@ -1,0 +1,98 @@
+body {
+  background-color: #2F2E41;
+
+  margin: 71px auto 23px;
+  width: 1092px;
+
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: baseline;
+
+  margin-bottom: 101px;
+
+  font-weight: 500;
+}
+
+nav, h1, a, footer {
+  font-family: 'JetBrains Mono', monospace;
+  color: #FFF;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li a {
+  margin-left: 64px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  color: #00aa93;
+  transition: 0.4s all;
+}
+
+/* Colocar ul, virgula seleceiona o seletor. Funciona como uma seleção de pastas desejadas. Se eu coloar sem vírgula, apenas o último seletor é afetado, como em uma seleção de pastas. O + serve para "pular" um seletor e apenas o último da "soma" é selecionado. */
+ul, li a + a + a {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 157px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #FFF;
+
+  margin: 0;
+}
+
+span {
+  color: #00BFA6;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Open Sans', sans-serif;
+
+  color: #C2C2C2;
+
+  margin-top: 59px;
+}
+
+.line {
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 27px;
+
+  border: solid #00BFA6;
+  border-width: 1px 0px 0px;
+}
+
+footer {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#cadeado {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
