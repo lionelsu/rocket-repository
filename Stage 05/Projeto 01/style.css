@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: hsla(240, 5%, 7%, 1);
+  --bg-primary-light: hsla(194, 100%, 63%, 0.13);
+  --primary-color: hsla(194, 100%, 63%, 0.13);
+  --text-color: hsla(0, 0%, 100%, 1);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  width: 22.8rem;
+  height: 22.7rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#timer {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8.8rem;
+  line-height: 10.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#controls {
+  background-color: var(--bg-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.column {
+  background-color: red;
+}
+
+.row {
+  background-color: blue;
+  width: 22.8rem;
+  height: 10.3rem;
+  margin-bottom: 1.6rem;
+}
+
+.timeWrapper {
+  background-color: black;
+  width: 22.8rem;
+  height: 10.8rem;
+}
