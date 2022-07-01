@@ -18,8 +18,11 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-}
 
+  display: grid;
+  min-height: 100vh;
+}
+/*
 main {
   width: 22.8rem;
   height: 22.7rem;
@@ -30,6 +33,12 @@ main {
   right: 0;
   margin: auto;
 }
+*/
+
+main {
+  align-self: end;
+  justify-self: center;
+}
 
 button {
   background-color: transparent;
@@ -39,12 +48,12 @@ button {
 
 #timer {
   display: flex;
-  font-style: normal;
   font-weight: 700;
-  font-size: 8.8rem;
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
   line-height: 10.3rem;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
 
 #controls {
@@ -52,26 +61,24 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3.2rem;
   border-radius: 9999px;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
 }
 
 .hide {
   display: none;
 }
 
-.column {
-  background-color: red;
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
 }
 
-.row {
-  background-color: blue;
-  width: 22.8rem;
-  height: 10.3rem;
-  margin-bottom: 1.6rem;
-}
+footer {
+  align-self: end;
+  justify-self: end;
 
-.timeWrapper {
-  background-color: black;
-  width: 22.8rem;
-  height: 10.8rem;
+  padding: 0 4rem 3.2rem 0;
 }
