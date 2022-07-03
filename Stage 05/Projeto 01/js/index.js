@@ -24,6 +24,6 @@ const timer = Timer({
   resetControls: controls.reset
 })
 
-const sound = Sound()
+const sound = Sound()
 
 Events({controls, timer, sound})
