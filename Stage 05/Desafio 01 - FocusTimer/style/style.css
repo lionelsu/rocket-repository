@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-color: rgba(50, 50, 56, 1);
+  --card-color: rgba(225, 225, 230, 1);
+}
+
+body {
+  display: grid;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  place-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 8fr 1fr 8fr;
+  grid-template-rows: 20fr 1fr;
+  gap: 1.7rem;
+}
+
+main .timer {
+  display: flex;
+  color: var(--font-color);
+  font-weight: 500;
+  font-size: 12.7rem;
+  line-height: 14.8rem;
+  text-align: center;
+}
+
+/* Used justify-self/items/content to justify the grid along the row axis
+the aling align-self property is to justify the grid along the columm axis */
+main.timer-container {
+  grid-area: 1 / 1 / 1 / 1;
+  justify-self: end;
+
+}
+
+section.music-container {
+  grid-area: 1 / 3 / 1 / 3;
+  justify-self: start;
+}
+
+section .music {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3.2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  outline: none;
+  background: transparent;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  background-color: var(--card-color);
+}
+

@@ -4,31 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Focus Timer</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <main>
+  <main class="timer-container">
     <div class="timer">
       <span class="minutes">25</span>
       <span>:</span>
-      <span class="seconds"></span>
+      <span class="seconds">00</span>
     </div>
 
     <div class="controls">
-      <button class="play"></button>
-      <button class="stop"></button>
-      <button class="plus"></button>
-      <button class="minus"></button>
+      <button class="play"><img src="./assets/play.svg" alt="botão play"></button>
+      <button class="stop"><img src="./assets/stop.svg" alt="botão stop"></button>
+      <button class="plus"><img src="./assets/plus.svg" alt="botão mais minutos"></button>
+      <button class="minus"><img src="./assets/minus.svg" alt="botão menos minutos"></button>
     </div>
   </main>
 
-  <section>
-    <div class="forest"></div>
-    <div class="rain"></div>
-    <div class="house"></div>
-    <div class="fire"></div>
+  <section class="music-container">
+    <div class="music">
+      <div class="card"><img src="./assets/forest.svg" alt="cartão floresta"></div>
+      <div class="card"><img src="./assets/rain.svg" alt="cartão chuva"></div>
+      <div class="card"><img src="./assets/house.svg" alt="cartão casa"></div>
+      <div class="card"><img src="./assets/fire.svg" alt="cartão fogo"></div>
+    </div>
   </section>
 </body>
 </html>
