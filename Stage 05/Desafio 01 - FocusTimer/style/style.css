@@ -7,7 +7,10 @@
 :root {
   font-size: 62.5%;
   --font-color: rgba(50, 50, 56, 1);
+  --font-color-clicked: rgba(255, 255, 255, 1);
   --card-color: rgba(225, 225, 230, 1);
+  --card-color-clicked: rgba(2, 121, 157, 1);
+
 }
 
 body {
@@ -60,6 +63,7 @@ section .music {
 button {
   outline: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .card {
@@ -70,5 +74,9 @@ button {
   height: 15.2rem;
   border-radius: 2.4rem;
   background-color: var(--card-color);
+  cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
