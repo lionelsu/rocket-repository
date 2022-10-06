@@ -1,8 +1,24 @@
-import { musics } from './modules/sounds.js'
+import { Musics } from './modules/sounds.js'
 
 const musicPlayer = {
-  forest: musics('Floresta', 0),
-  rain: musics('Chuva', 1),
-  house: musics('Casa', 2),
-  fire: musics('Lareira', 3)
+  forest: Musics('Floresta', 0),
+  rain: Musics('Chuva', 1),
+  house: Musics('Casa', 2),
+  fire: Musics('Lareira', 3)
+}
+
+
+
+
+
+function colocacor() {
+  document.querySelector('.music').addEventListener('click', () => {
+    document.querySelector('.music').children[1].classList.add('cardClicked')
+  })
+}
+
+function tiracor() {
+  document.querySelector('.music').addEventListener('click', () => {
+    document.querySelector('.music').children[1].classList.remove('cardClicked')
+  })
 }

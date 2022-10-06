@@ -77,6 +77,14 @@ button {
   cursor: pointer;
 }
 
+.cardClicked {
+  background-color: var(--card-color-clicked);
+}
+
+.cardClicked>svg>path {
+  fill: #FFFFFF;
+}
+
 .hide {
   display: none;
 }
